@@ -8,6 +8,7 @@ const NormalWhpage = () => {
 
     const getContent = async ()=>{
         const res =await axios.get("/api")
+        console.log(res.data)
         setContent(res.data)
     }
 
